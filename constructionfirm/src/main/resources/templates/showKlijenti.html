@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Prikaz Klijenata</title>
+</head>
+<body>
+<div id="header">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="#projekti">Projekti</a></li>
+    <li><a href="/termin1">Posao</a></li>
+    <li><a href="/register">Register</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/admin">Admin Panel</a></li>
+  </ul>
+</div>
+<h1>Prikaz Svih Klijenata</h1>
+<table class="table table-striped table-responsive-md">
+  <thead>
+  <tr>
+    <th scope="col">Klijent Id</th>
+    <th scope="col">Ime</th>
+    <th scope="col">Prezime</th>
+    <th scope="col">Username</th>
+    <th scope="col">Email</th>
+    <th scope="col">Password</th>
+    <th scope="col">Role</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="singleKlijent:${listaKlijenata}">
+    <td scope="row" th:text="${singleKlijent.user_id}"></td>
+    <td scope="row" th:text="${singleKlijent.ime}"></td>
+    <td scope="row" th:text="${singleKlijent.prezime}"></td>
+    <td scope="row" th:text="${singleKlijent.username}"></td>
+    <td scope="row" th:text="${singleKlijent.email}"></td>
+    <td scope="row" th:text="${singleKlijent.password}"></td>
+    <td scope="row" th:text="${singleKlijent.role}"></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

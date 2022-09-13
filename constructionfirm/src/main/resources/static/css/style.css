@@ -1,0 +1,485 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#hero-div {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header {
+    top: 0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#header ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Arvo', sans-serif;
+}
+
+
+#hero-div #hero-naslov {
+    width: 60%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero-div #hero-naslov h1 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Arvo', sans-serif;
+}
+
+#hero-div #hero-naslov p {
+    margin-top: 5%;
+    color: white;
+    width: 75%;
+    font-size: 18px;
+}
+
+#hero-div #hero-btn {
+    width: 60%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-div #hero-btn .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    height: 7vh;
+    background-color: white;
+    border-radius: 40px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Arvo', sans-serif;
+}
+
+#hero-div #hero-btn .btn:hover {
+    width: 23%;
+    height: 9vh;
+    box-shadow: 1px 2px 2px 1px;
+    transition: 0.4s ease-in;
+}
+
+#projekti {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#projekti #projekti-lijevo {
+    width: 50%;
+    height: 100vh;
+}
+
+#projekti #projekti-lijevo #prva-linija {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projekti #projekti-lijevo #druga-linija {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projekti #projekti-lijevo #prva-linija #prvi-projekat {
+    width: 50%;
+    height: 50vh;
+    background-image: url('../img/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#projekti #projekti-lijevo #prva-linija #drugi-projekat {
+    width: 50%;
+    height: 50vh;
+    background-image: url('../img/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#projekti #projekti-lijevo #druga-linija #treci-projekat {
+    width: 100%;
+    height: 50vh;
+    background-image: url('../img/img-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#projekti #projekti-desno {
+    width: 50%;
+    height: 100vh;
+}
+
+#projekti #projekti-desno #treca-linija {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projekti #projekti-desno #treca-linija #cetvrti-projekat {
+    width: 100%;
+    height: 50vh;
+    background-image: url('../img/img-5.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#projekti #projekti-desno #cetvrta-linija {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projekti #projekti-desno #cetvrta-linija #peti-projekat {
+    width: 100%;
+    height: 50vh;
+    background-image: url('../img/img-3.jpg');
+    background-size: cover;
+    background-position: center;   
+}
+
+#projekti #projekti-desno #cetvrta-linija #sesti-projekat {
+    width: 100%;
+    height: 50vh;
+    background-image: url('../img/img-6.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#termin {
+    width: 100%;
+    height: 85vh;
+    z-index: 100;
+}
+
+#termin #termin-naslov {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#termin #termin-naslov h1 {
+    font-family: 'Arvo', sans-serif;
+}
+
+#termin #termin-input {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#termin #termin-input form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#termin #termin-input form input {
+    width: 25rem;
+    border-radius: 40px;
+    height: 5vh;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#termin-1linija {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#termin-2linija {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#termin-2linija input {
+    width: 25rem;
+    border-radius: 40px;
+    height: 5vh;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#termin-3linija {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#termin-3linija input {
+    width: 25rem;
+    border-radius: 40px;
+    height: 5vh;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#termin-3linija label {
+    font-family: 'Arvo', sans-serif;
+    color: gray;
+}
+
+#termin-3linija select {
+    width: 15rem;
+    text-align: center;
+    border-radius: 40px;
+    height: 5vh;
+}
+
+#termin-4linija {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#termin-4linija input {
+    width: 25rem;
+    border-radius: 40px;
+    height: 5vh;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#termin-4linija button {
+    margin-top: 3%;
+    width: 20%;
+    height: 6vh;
+    border-radius: 40px;
+    border: 1px solid transparent;
+    background-color: black;
+    color: white;
+}
+
+#footer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    font-size: 13px;
+}
+
+#prijava {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#prijava #prijava-lijevo {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prijava #prijava-lijevo p {
+    font-family: 'Arvo', sans-serif;
+    margin-top: 2%;
+}
+
+#prijava #prijava-lijevo a {
+    text-decoration: none;
+    width: 35%;
+    height: 5vh;
+    margin-top: 2%;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#prijava #prijava-desno {
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#prijava #prijava-desno p {
+    font-family: 'Arvo', sans-serif;
+    margin-top: 2%;
+}
+
+#prijava #prijava-desno a {
+    text-decoration: none;
+    width: 35%;
+    height: 5vh;
+    margin-top: 2%;
+    background-color: black;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainpage {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+#mainpage h1 {
+    margin-left: 10%;
+    font-family: 'Arvo', sans-serif;
+    font-size: 38px;
+}
+
+#posao-info {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#posao-info #posao-info-1 {
+    width: 33.33%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+}
+
+#posao-info #posao-info-1 p {
+    margin-top: 10%;
+    font-family: 'Arvo', sans-serif;
+    font-size: 1rem;
+}
+
+#posao-info #posao-info-2 {
+    width: 33.33%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+}
+
+#posao-info #posao-info-2 p {
+    margin-top: 10%;
+    font-family: 'Arvo', sans-serif;
+    font-size: 1rem;
+}
+
+#posao-info #posao-info-3 {
+    width: 33.33%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+}
+
+#posao-info #posao-info-3 p {
+    margin-top: 10%;
+    font-family: 'Arvo', sans-serif;
+    font-size: 1rem;
+}
+
+#prijavitese {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#prijavitese a {
+    width: 20%;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

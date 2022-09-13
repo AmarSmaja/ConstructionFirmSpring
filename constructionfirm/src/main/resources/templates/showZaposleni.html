@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Lista Zaposlenih Osoba</title>
+</head>
+<body>
+<h1>Prikaz Zaposlenih Osoba</h1>
+<table class="table table-striped table-responsive-md">
+    <thead>
+    <tr>
+        <th scope="col">Zaposleni Id</th>
+        <th scope="col">Ime</th>
+        <th scope="col">Prezime</th>
+        <th scope="col">Role</th>
+        <th scope="col">Headquarter</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="singleZaposleni:${listaZaposlenih}">
+        <td scope="row" th:text="${singleZaposleni.emp_id}"></td>
+        <td scope="row" th:text="${singleZaposleni.emp_ime}"></td>
+        <td scope="row" th:text="${singleZaposleni.emp_prezime}"></td>
+        <td scope="row" th:text="${singleZaposleni.emp_role}"></td>
+        <td scope="row" th:text="${singleZaposleni.emp_hq}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

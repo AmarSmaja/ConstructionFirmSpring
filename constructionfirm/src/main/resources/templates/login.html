@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div id="hero">
+        <div id="header">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Projekti</a></li>
+                <li><a href="/termin1">Termini</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/admin">Admin Panel</a></li>
+            </ul>
+        </div>
+        <form th:action="@{/login}" method="post">
+            <h1>Ulogujte se!</h1>
+            <div id="hero-1">
+                <input type="text" id="username" name="username" placeholder="Unesite username">
+            </div>
+            <div id="hero-2">
+                <input type="password" id="password" name="password" placeholder="Unesite password">
+            </div>
+            <div id="hero-3">
+                <button type="submit" class="submit-btn">Log In</button>
+            </div>
+        </form>
+        <p>Nemate profil? <a th:href="@{/register}">Register</a></p>
+    </div>
+    <div th:if="${param.error}" class="alert alert-danger">
+        Pogresan Password ili Username.
+    </div>
+</body>
+</html>

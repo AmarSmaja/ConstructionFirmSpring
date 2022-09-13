@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-1 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-1 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    width: 25%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#hero #hero-1 .add-client {
+    margin-left: 5%;
+}
+
+#hero #hero-2 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-2 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    width: 25%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#hero #hero-2 .add-client {
+    margin-left: 5%;
+}
+
+#hero #hero-3 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-3 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    width: 25%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#hero #hero-3 .add-client {
+    margin-left: 5%;
+}
+
+#hero #hero-4 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-4 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    width: 25%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#hero #hero-4 .add-client {
+    margin-left: 5%;
+}
+
+#hero #hero-5 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-5 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    width: 25%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#hero #hero-5 .add-client {
+    margin-left: 5%;
+}
+
+#hero #hero-6 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-6 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    width: 25%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#hero #hero-6 .add-client {
+    margin-left: 5%;
+}
+
+#hero #hero-7 {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero #hero-7 a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arvo', sans-serif;
+    width: 25%;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+#hero #hero-7 .add-client {
+    margin-left: 5%;
+}
