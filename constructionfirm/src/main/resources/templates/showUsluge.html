@@ -20,6 +20,7 @@
     <tr th:each="singleUsluga:${listaUsluga}">
         <td scope="row" th:text="${singleUsluga.id_usluge}"></td>
         <td scope="row" th:text="${singleUsluga.ime_usluge}"></td>
+        <td scope="row" th:text="${singleUsluga.opis_usluge}"></td>
     </tr>
     </tbody>
 </table>

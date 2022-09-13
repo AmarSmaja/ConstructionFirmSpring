@@ -21,16 +21,12 @@
   </div>
   <h1>Prijavite se za posao!</h1>
   <hr>
-  <form action="#" th:action="@{/saveZahtjevForm}" th:object="${noviZahtjevForm}" method="post">
+  <form action="#" th:action="@{/saveZahtjevForm}" th:object="${listaZahtjevFormi}" method="post">
     <input type="text" placeholder="Unesite Vase Ime" th:field="*{ime}" class="form-control mb-4 col-4"/>
     <input type="text" placeholder="Unesite Vase Prezime" th:field="*{prezime}" class="form-control mb-4 col-4"/>
     <input type="text" placeholder="Unesite Vas E-mail" th:field="*{email}" class="form-control mb-4 col-4"/>
     <input type="text" placeholder="Unesite Drzavu" th:field="*{drzava}" class="form-control mb-4 col-4"/>
-    <select name="posao" id="posao" th:field="*{radnik}">
-      <option th:value="Bosna i Hercegovina" th:text="Bosna i Hercegovina" />
-      <option th:value="Srbija" th:text="Srbija" />
-      <option th:value="Hrvatska" th:text="Hrvatska" />
-    </select>
+    <input type="text" placeholder="Opisite Vrstu Posla" th:field="*{radnik}" class="form-control mb-4 col-4"/>
     <button type="submit" class="btn btn-info col-2">Posalji Zahtjev</button>
   </form>
 </div>

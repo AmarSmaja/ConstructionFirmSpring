@@ -21,7 +21,7 @@
     </div>
     <h1>Prijavite se za posao!</h1>
     <hr>
-    <form action="#" th:action="@{/saveJobZahtjev}" th:object="${listaZahtjevFormi}" method="post">
+    <form action="#" th:action="@{/saveJobZahtjev}" th:object="${noviJobZahtjev}" method="post">
         <input type="text" placeholder="Unesite Vase Ime" th:field="*{ime}" class="form-control mb-4 col-4"/>
         <input type="text" placeholder="Unesite Vase Prezime" th:field="*{prezime}" class="form-control mb-4 col-4"/>
         <input type="text" placeholder="Unesite Vas E-mail" th:field="*{mail}" class="form-control mb-4 col-4"/>
