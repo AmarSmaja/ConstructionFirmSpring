@@ -31,11 +31,17 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter{
         http
 
                 .authorizeRequests()
-                .antMatchers("/", "/register", "/termin1" ,"/saveUser", "/css/**", "/js/**", "/img/**", "/images/**", "/addZahtjev", "/viewJobApplications", "/saveJobZahtjev", "/saveZahtjevForm", "/viewZahtjevi", "/zahtjeviForm")
+                .antMatchers("/", "/register", "/termin1" ,"/saveUser", "/css/**", "/js/**", "/img/**", "/images/**", "/zahtjeviForm", "/saveZahtjevForm")
                 .permitAll()
                 .and()
+
                 .authorizeRequests()
-                .antMatchers("/admin").hasAuthority("Admin")
+                .antMatchers("/addZahtjev", "/saveJobZahtjev").hasAuthority("USER")
+                .antMatchers("/admin", "/viewZahtjevi").hasAuthority("Admin")
+                .and()
+
+                .logout()
+                .permitAll()
                 .and()
 
                 .authorizeRequests()
@@ -46,6 +52,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter{
                 .formLogin()
                 .loginPage("/login")
                 .permitAll()
+                .and()
+                .rememberMe()
                 .and()
 
                 .logout()

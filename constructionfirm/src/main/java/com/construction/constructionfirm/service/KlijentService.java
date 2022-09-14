@@ -1,5 +1,6 @@
 package com.construction.constructionfirm.service;
 
+import com.construction.constructionfirm.entity.DrzaveEntity;
 import com.construction.constructionfirm.entity.KlijentEntity;
 import com.construction.constructionfirm.repos.KlijentRepo;
 import org.springframework.beans.factory.annotation.Autowired;

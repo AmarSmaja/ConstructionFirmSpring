@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Cestitke! Uspjesna prijava</title>
+</head>
+<body>
+<div id="header">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#projekti">Projekti</a></li>
+        <li><a href="/termin1">Posao</a></li>
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/admin">Admin Panel</a></li>
+        <li><form class="form-inline my-2 my-lg-0" th:action="@{/logout}" method="post">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+        </form></li>
+    </ul>
+</div>
+<div class="uspjprijava-div">
+    <h1>Cestitke! Uspjesno ste poslali prijavu za posao</h1>
+    <p>Obavijest za posao cete dobiti nakon evaluacije</p>
+</div>
+</body>
+</html>

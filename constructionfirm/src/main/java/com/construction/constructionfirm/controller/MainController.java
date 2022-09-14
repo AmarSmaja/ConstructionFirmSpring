@@ -40,6 +40,7 @@ public class MainController {
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
+
     @GetMapping("/")
     public String getIndex() {
         return "index";
@@ -67,7 +68,7 @@ public class MainController {
         String plainPass = klijent.getPassword();
         String hashPass = bCryptPasswordEncoder.encode(plainPass);
         klijent.setPassword(hashPass);
-        klijent.setRole("USER");
+        klijent.setRole("Admin");
         klijentService.saveKlijent(klijent);
         return "index";
     }
@@ -181,7 +182,12 @@ public class MainController {
     @PostMapping("/saveJobZahtjev")
     public String saveJobZahtjev(@ModelAttribute("noviJobZahtjev")JobZahtjeviEntity job) {
         jobZahtjeviService.saveJobZahtjev(job);
-        return "index";
+        return "uspjPrijava";
+    }
+
+    @GetMapping("/error")
+    public String getErrorPage() {
+        return "error";
     }
 
     @GetMapping("/viewJobApplications")
